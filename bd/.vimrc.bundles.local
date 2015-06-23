@@ -1,0 +1,8 @@
+"UnBundle 'Shougo/neocomplcache'
+"UnBundle 'Shougo/neosnippet'
+"UnBundle 'Shougo/neosnippet-snippets'
+"UnBundle 'Valloric/YouCompleteMe'
+"UnBundle 'honza/vim-snippets'
+UnBundle 'Shougo/neocomplete.vim.git'
+
+
