@@ -1,18 +1,22 @@
 colorscheme koehler
 let g:airline_powerline_fonts=1
+let g:tex_conceal = ""
+let g:tex_flavor = 'latex'
+let g:tex_indent_items = 4
 set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
 set lines=36 columns=100
-"set softtabstop=2 
-"set shiftwidth=2  " Number of space characters inserted for indentation
-"set tabstop=4     " Number of space characters that will be inserted when tab is pressed
-"set expandtab     " Insert space characters whenever the tab key is pressed
+set softtabstop=2
+set shiftwidth=2  " Number of space characters inserted for indentation
+set tabstop=2     " Number of space characters that will be inserted when tab is pressed
+set expandtab     " Insert space characters whenever the tab key is pressed
 "set cindent
 "set number
 "set mouse=a
 "set history=100 "Save command history
 "set ic
 "set nocompatible    " turn off vi compatiblity
-"set nowrap          " don't wrap long lines
+
+set wrap          " wrap long lines
 
 " Setup folding
 au BufRead,BufNewFile *.hh,*cc,*.C,*.cpp set shiftwidth=2
@@ -22,7 +26,8 @@ au BufWinEnter * silent loadview
 autocmd BufEnter * :syntax sync fromstart
 
 " OPTIONAL: This enables automatic indentation as you type.
-filetype indent on
+filetype plugin indent on
 
 " use tab for code alignment
 map <TAB> =
+
